@@ -1,0 +1,14 @@
+{
+  "name": "pcard-audit-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "openai": "^7.12.1",
+    "sqlite3": "^5.1.7"
+  }
+}

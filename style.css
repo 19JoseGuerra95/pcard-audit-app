@@ -1,0 +1,72 @@
+:root {
+  --bg: #f5f2ec;
+  --panel: #ffffff;
+  --text: #1f2937;
+  --muted: #667085;
+  --border: #d9dee7;
+  --accent: #9d2235;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+.site-header {
+  padding: 28px 24px;
+  background: #111827;
+  color: #fff;
+}
+.site-header h1 { margin: 0 0 8px; }
+.site-header p { margin: 0; color: #d1d5db; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.tabs { display: flex; gap: 8px; margin-bottom: 18px; }
+.tab-button {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tab-button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.tab-panel {
+  display: none;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+}
+.tab-panel.active { display: block; }
+textarea, input, select, button { font: inherit; }
+textarea, input, select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fff;
+}
+form button, .filters button {
+  margin-top: 10px;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.filters { display: grid; gap: 14px; max-width: 720px; }
+.filters label { display: grid; gap: 6px; font-weight: 700; }
+.result-box {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fafafa;
+  color: var(--muted);
+  white-space: pre-wrap;
+}

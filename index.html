@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P-Card Audit Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>P-Card Audit Assistant</h1>
+    <p>Natural-language questions and prohibited-purchase review.</p>
+  </header>
+
+  <main class="container">
+    <div class="tabs">
+      <button class="tab-button active" data-tab="ask-tab">Ask the Database</button>
+      <button class="tab-button" data-tab="dashboard-tab">Prohibited Purchases Dashboard</button>
+    </div>
+
+    <section id="ask-tab" class="tab-panel active">
+      <h2>Ask the Database</h2>
+      <p>Ask a question about P-card transactions in natural language.</p>
+
+      <form id="question-form">
+        <textarea id="question-input" rows="4" placeholder="Enter your question here..."></textarea>
+        <button type="submit">Ask</button>
+      </form>
+
+      <div id="question-result" class="result-box">
+        No query submitted yet.
+      </div>
+    </section>
+
+    <section id="dashboard-tab" class="tab-panel">
+      <h2>Prohibited Purchases Dashboard</h2>
+      <p>Search by transaction description or vendor for possible internal-control deviations.</p>
+
+      <div class="filters">
+        <label>
+          Year
+          <select id="year-select">
+            <option value="2014">2014</option>
+          </select>
+        </label>
+
+        <label>
+          Description search
+          <input id="description-search" type="text" placeholder="Search Description">
+        </label>
+
+        <button id="description-button" type="button">Search Description</button>
+
+        <label>
+          Vendor search
+          <input id="vendor-search" type="text" placeholder="Search Vendor">
+        </label>
+
+        <button id="vendor-button" type="button">Search Vendor</button>
+      </div>
+
+      <div id="dashboard-result" class="result-box">
+        No dashboard search yet.
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
