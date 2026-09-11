@@ -21,7 +21,7 @@ It combines a SQLite P-card transaction database with an AI-assisted natural-lan
 - `style.css` — website appearance
 - `app.js` — frontend behavior
 - `server.js` — backend, API routes, OpenAI integration, and SQLite queries
-- `pcards.db` — SQLite database
+> Note: `pcards.db` is required to run the application locally but is not stored in the GitHub repository because of its large file size.
 - `.env.example` — environment variable template
 - `.gitignore` — prevents secrets and local files from being committed
 - `package.json` — Node.js dependencies and start script
